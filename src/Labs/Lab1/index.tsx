@@ -210,7 +210,7 @@ export default function Lab1() {
           <h5>File upload</h5>
           <input id="wd-upload" type="file" />
 
-          {/* 5. radio */}
+          {/* 5. radio button */}
           <h5 id="wd-radio-buttons">Radio buttons</h5>
           <label>Favorite movie genre:</label><br />
 
@@ -251,8 +251,7 @@ export default function Lab1() {
           <select id="wd-select-one-genre">
             <option value="COMEDY">Comedy</option>
             <option value="DRAMA">Drama</option>
-            <option selected value="SCIFI">
-              Science Fiction</option>
+            <option selected value="SCIFI">Science Fiction</option>
             <option value="FANTASY">Fantasy</option>
           </select>
 
@@ -262,8 +261,7 @@ export default function Lab1() {
           <select id="wd-select-many-genre" multiple>
             <option selected value="COMEDY">Comedy</option>
             <option value="DRAMA">Drama</option>
-            <option selected value="SCIFI">
-              Science Fiction</option>
+            <option selected value="SCIFI">Science Fiction</option>
             <option value="FANTASY">Fantasy</option>
           </select>
 
@@ -280,19 +278,22 @@ export default function Lab1() {
           <label htmlFor="wd-text-fields-salary-start"> Starting salary:</label>
           <input type="number"
             id="wd-text-fields-salary-start"
-            placeholder="1000" /><br />
+            placeholder="1000"
+            defaultValue="10000" /><br />
 
           {/* 8.3 range */}
           <label htmlFor="wd-text-fields-rating"> Rating: </label>
           <input type="range"
             id="wd-text-fields-rating"
-            max="5" /><br />
+            max="5"
+            defaultValue="4" /><br />
 
           {/* 8.4 date */}
           <label htmlFor="wd-text-fields-dob"> Date of birth: </label>
           <input type="date"
             id="wd-text-fields-dob"
-            placeholder="2000-01-21" />
+            placeholder="2000-01-21"
+            defaultValue="2024-01-01" />
 
         </form>
       </div>
