@@ -10,7 +10,7 @@ export default function TOC() {
         <li><Link to="/Labs/Lab3">Lab 3</Link></li>
       </ul>
       <li><Link to="/Kanbas">Kanbas</Link></li>
-      <li><Link to="https://github.com/tywangq/kanbas-react-web-app">Github</Link></li>
+      <li><Link to="https://github.com/tywangq/kanbas-react-web-app" id="wd-github">Github</Link></li>
     </ul>
   );
 }
