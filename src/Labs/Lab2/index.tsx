@@ -6,32 +6,41 @@ import Padding from "./Padding";
 import Margins from "./Margins";
 import Corners from "./Corners";
 import Dimensions from "./Dimensions";
-import { RelativePosition, AbsolutePosition, FixedPosition } from "./Positions";
+import Positions from "./Positions";
 import Zindex from "./Zindex";
 import Float from "./Float";
 import GridLayout from "./GridLayout";
 import Flex from "./Flex";
+import ReactIconsSampler from "./ReactIcons";
+import BootstrapGrids from "./BootstrapGrids";
+import ScreenSizeLabel from "./ScreenSizeLabel";
+import BootstrapTables from "./BootstrapTables";
+import BootstrapLists from "./BootstrapLists";
+import BootstrapForms from "./BootstrapForms";
+import BootstrapNavigation from "./BootstrapNavigation";
 
 export default function Lab2() {
   return (
     <div id="wd-lab2">
-
       <h2>Lab 2 - Cascading Style Sheets</h2>
 
       {/* style attribute */}
-      {/* <h2>Styling with the STYLE attribute</h2> */}
-      {/* <p style={{
+      <h2>Styling with the STYLE attribute</h2>
+      <p style={{
         backgroundColor: "blue",
         color: "white"
-      }}> */}
-
-      {/* external file */}
-      {/* <p>
+      }}>
         Style attribute allows configuring look and feel
         right on the element. Although it's very convenient
         it is considered bad practice and you should avoid
         using the style attribute.
-      </p> */}
+      </p>
+
+      {/* external file */}
+      {/* element selector */}
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente consequatur quisquam facere quo, esse nihil autem perferendis, laborum enim rem reiciendis tempore quibusdam! Dolorem autem consectetur incidunt cupiditate ullam!
+      </p>
 
       {/* id selector */}
       <div id="wd-css-id-selectors">
@@ -78,59 +87,36 @@ export default function Lab2() {
         </div>
       </div>
 
-      {/* color */}
+      {/* color & background */}
       <ForegroundColors />
       <BackgroundColors />
 
       {/* box model */}
-      <h2 style={{
-        backgroundColor: "yellow"
-      }}>
-        Block vs. inline elements
-      </h2>
-      <p style={{
-        backgroundColor: "blue",
-        color: "white"
-      }}>
-        Headings and paragraphs are
-        block elements. Width is parent's
-        width</p>
-      Normal text renders inline
-      <br /><br />
-      <span style={{
-        backgroundColor: "red", color: "white"
-      }}>Span elements</span>
-      <span style={{
-        backgroundColor: "red", color: "white"
-      }}>render inline</span>
-      with the rest of the content
-      <span style={{
-        backgroundColor: "red",
-        color: "white",
-        borderStyle: "solid",
-        borderWidth: "10px",
-        borderColor: "green"
-      }}>
-        Span elements</span>
-      <span style={{
-        backgroundColor: "red",
-        color: "white",
-        border: "solid 10px green"
-      }}>
-        render inline</span>
-
       <Borders />
       <Padding />
       <Margins />
       <Corners />
       <Dimensions />
-      <RelativePosition />
-      <AbsolutePosition />
-      <FixedPosition />
+
+      {/* positioning & stacking */}
+      <Positions />
       <Zindex />
+
+      {/* layout */}
       <Float />
       <GridLayout />
       <Flex />
+
+      {/* icon */}
+      <ReactIconsSampler />
+
+      {/* bootstrap */}
+      <BootstrapGrids />
+      <ScreenSizeLabel />
+      <BootstrapTables />
+      <BootstrapLists />
+      <BootstrapForms />
+      <BootstrapNavigation />
 
     </div>
   );
