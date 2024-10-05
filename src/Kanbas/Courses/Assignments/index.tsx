@@ -38,7 +38,7 @@ export default function Assignments() {
                   {/* a1 right */}
                   <div className="col d-flex justify-content-between align-items-center">
                     <div>
-                      <div className="fw-bold">A1</div>
+                      <a className="wd-assignment-link fw-bold" href="#/Kanbas/Courses/1234/Assignments/123">A1</a>
                       <div>
                         <span className="text-danger">Multiple Modules</span> | <strong> Not available until </strong> May 6 at 12:00am | <strong> Due </strong> May 13 at 11:59pm | 100 pts
                       </div>
@@ -65,7 +65,7 @@ export default function Assignments() {
                   {/* a2 right */}
                   <div className="col d-flex justify-content-between align-items-center">
                     <div>
-                      <div className="fw-bold">A2</div>
+                      <a className="wd-assignment-link fw-bold" href="#/Kanbas/Courses/1234/Assignments/123">A2</a>
                       <div>
                         <span className="text-danger">Multiple Modules</span> | <strong> Not available until </strong> May 13 at 12:00am | <strong> Due </strong> May 20 at 11:59pm | 100 pts
                       </div>
@@ -92,7 +92,7 @@ export default function Assignments() {
                   {/* a3 right */}
                   <div className="col d-flex justify-content-between align-items-center">
                     <div>
-                      <div className="fw-bold">A3</div>
+                      <a className="wd-assignment-link fw-bold" href="#/Kanbas/Courses/1234/Assignments/123">A3</a>
                       <div>
                         <span className="text-danger">Multiple Modules</span> | <strong> Not available until </strong> May 20 at 12:00am | <strong> Due </strong> May 27 at 11:59pm | 100 pts
                       </div>
@@ -103,39 +103,10 @@ export default function Assignments() {
                   </div>
                 </div>
               </li>
-            </ul>
-
-          </li>
-        </ul>
-      </div>
-
-
-      <div id="wd-assignments">
-        <input id="wd-search-assignment" placeholder="Search for Assignments" />&nbsp;
-        <button id="wd-add-assignment-group">+ Group</button>&nbsp;
-        <button id="wd-add-assignment">+ Assignment</button>
-
-        <h3 id="wd-assignments-title">
-          ASSIGNMENTS 40% of Total <button>+</button>
-        </h3>
-        <ul id="wd-assignment-list">
-
-          <li className="wd-assignment-list-item">
-            <a className="wd-assignment-link" href="#/Kanbas/Courses/1234/Assignments/123">A1 - ENV + HTML</a><br />
-            <span>Multiple Modules | <b>Not available until</b> May 6 at 12:00am |<br /> <b>Due</b> May 13 at 11:59pm | 100 pts </span>
-          </li>
-
-          <li className="wd-assignment-list-item">
-            <a className="wd-assignment-link" href="#/Kanbas/Courses/1234/Assignments/123">A2 - CSS + BOOTSTRAP</a><br />
-            <span>Multiple Modules | <b>Not available until</b> May 13 at 12:00am |<br /> <b>Due</b> May 20 at 11:59pm | 100 pts </span>
-          </li>
-
-          <li className="wd-assignment-list-item">
-            <a className="wd-assignment-link" href="#/Kanbas/Courses/1234/Assignments/123">A3 - JAVASCRIPT + REACT</a><br />
-            <span>Multiple Modules | <b>Not available until</b> May 20 at 12:00am |<br /> <b>Due</b> May 27 at 11:59pm | 100 pts </span>
-          </li>
-        </ul>
-      </div>
+            </ul >
+          </li >
+        </ul >
+      </div >
     </div>
   );
 }

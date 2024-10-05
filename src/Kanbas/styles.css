@@ -59,3 +59,8 @@ body * {
 .text {
   text-align: center;
 }
+
+.wd-assignment-link {
+  color: inherit;
+  text-decoration: none;
+}
