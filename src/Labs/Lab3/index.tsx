@@ -16,6 +16,13 @@ import ForLoops from "./ForLoops";
 import MapFunction from "./MapFunction";
 import FindFunction from "./FindFunction";
 import FilterFunction from "./FilterFunction";
+import House from "./House";
+import JsonStringify from "./JsonStringify";
+import TodoList from "./todos/TodoList";
+import Spreading from "./Spreading";
+import Destructing from "./Destructing";
+import FunctionDestructing from "./FunctionDestructing";
+import DestructingImports from "./DestructingImports";
 
 export default function Lab3() {
   return (
@@ -49,6 +56,20 @@ export default function Lab3() {
       <MapFunction />
       <FindFunction />
       <FilterFunction />
+
+      {/* JSON */}
+      <House />
+      <JsonStringify />
+      <TodoList />
+
+      {/* spreading */}
+      <Spreading />
+
+      {/* destructing */}
+      <Destructing />
+      <FunctionDestructing />
+      <DestructingImports />
+      
     </div>
   );
 }
