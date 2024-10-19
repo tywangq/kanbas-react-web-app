@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import * as db from "../../Database";
 import AssignmentsControls from "./AssignmentsControls";
 import LessonControlButtons from "../Modules/LessonControlButtons";
@@ -11,6 +11,19 @@ import { FaRegEdit } from "react-icons/fa";
 export default function Assignments() {
   const { cid } = useParams();
   const assignments = db.assignments;
+
+  const formatDate = (isoDate: any) => {
+    const date = new Date(isoDate);
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true,
+    } as const;
+    const formattedDate = date.toLocaleString('en-US', options).replace(',', '');
+    return formattedDate.replace(/(AM|PM)/g, (match) => match.toLowerCase());
+  };
 
   return (
     <div>
@@ -32,7 +45,7 @@ export default function Assignments() {
 
             <ul className="wd-assignment-list-item list-group rounded-0">
               {assignments.filter((assignment: any) => assignment.course === cid).map((assignment: any) => (
-                <li className="list-group-item p-3" key={assignment._id}>
+                <li key={assignment._id} className="list-group-item p-3">
                   <div className="d-flex justify-content-between align-items-center">
 
                     {/* left-side icons */}
@@ -44,13 +57,13 @@ export default function Assignments() {
 
                     {/* middle section */}
                     <div className="flex-grow-1 mx-3">
-                      <a className="wd-assignment-link fw-bold" href="#/Kanbas/Courses/1234/Assignments/123">
-                        {assignment.title}
+                      <a className="wd-assignment-link fw-bold" href={`#/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}>
+                        {assignment._id}
                       </a>
                       <div>
-                        <span className="text-danger">Multiple Modules</span> |
-                        <strong> Not available until </strong> May 6 at 12:00am |
-                        <strong> Due </strong> May 13 at 11:59pm | 100 pts
+                        <span className="text-danger">Multiple Modules</span> &#124;
+                        <strong> Not available until </strong> {formatDate(assignment.available)} &#124;
+                        <strong> Due </strong> {formatDate(assignment.due)} &#124; {assignment.points} pts
                       </div>
                     </div>
 

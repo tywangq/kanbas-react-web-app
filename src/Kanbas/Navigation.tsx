@@ -30,7 +30,7 @@ export default function KanbasNavigation() {
       </Link>
 
       {links.map((link) => (
-        <Link key={link.path} to={link.path} className={`list-group-item text-center border-0 bg-black
+        <Link key={link.label} to={link.path} className={`list-group-item text-center border-0 bg-black
               ${pathname.includes(link.label) ? "text-danger bg-white" : "text-white bg-black"}`}>
           {link.icon({ className: "fs-1 text-danger" })}
           <br />

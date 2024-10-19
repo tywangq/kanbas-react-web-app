@@ -2,46 +2,82 @@
   {
     "_id": "A101",
     "title": "Propulsion Assignment",
-    "course": "RS101"
-  },  
+    "course": "RS101",
+    "description": "This assignment focuses on the principles of propulsion systems and their applications in aerospace engineering.",
+    "available": "2024-05-06T00:00",
+    "due": "2024-05-13T23:59",
+    "points": "90"
+  },
   {
     "_id": "A102",
     "title": "Combustion Analysis",
-    "course": "RS101"
+    "course": "RS101",
+    "description": "Analyze the combustion processes in various fuels and evaluate their efficiency in propulsion.",
+    "available": "2024-05-13T00:00",
+    "due": "2024-05-20T23:59",
+    "points": "110"
   },
   {
     "_id": "A103",
     "title": "Nozzle Design Project",
-    "course": "RS101"
+    "course": "RS101",
+    "description": "Design and optimize a nozzle for a specific propulsion system, focusing on performance metrics.",
+    "available": "2024-05-20T00:00",
+    "due": "2024-05-27T23:59",
+    "points": "100"
   },
   {
     "_id": "A201",
     "title": "Aerodynamics Quiz",
-    "course": "RS102"
+    "course": "RS102",
+    "description": "A quiz to assess understanding of fundamental aerodynamic principles and their applications.",
+    "available": "2024-05-06T00:00",
+    "due": "2024-05-13T23:59",
+    "points": "100"
   },
   {
     "_id": "A202",
     "title": "Flow Analysis",
-    "course": "RS102"
+    "course": "RS102",
+    "description": "Evaluate fluid flow behavior in various systems and its impact on aerodynamic performance.",
+    "available": "2024-05-13T00:00",
+    "due": "2024-05-20T23:59",
+    "points": "100"
   },
   {
     "_id": "A203",
     "title": "Heating Analysis",
-    "course": "RS102"
+    "course": "RS102",
+    "description": "Analyze heat transfer mechanisms in aerodynamic systems and their effect on performance.",
+    "available": "2024-05-20T00:00",
+    "due": "2024-05-27T23:59",
+    "points": "100"
   },
   {
     "_id": "A301",
     "title": "Structural Design Task",
-    "course": "RS103"
+    "course": "RS103",
+    "description": "Develop a structural design for an aerospace component, focusing on materials and load-bearing capabilities.",
+    "available": "2024-05-06T00:00",
+    "due": "2024-05-13T23:59",
+    "points": "100"
   },
   {
     "_id": "A302",
     "title": "Orbital Calculations",
-    "course": "RS103"
+    "course": "RS103",
+    "description": "Perform calculations related to orbital mechanics, including trajectory analysis and satellite positioning.",
+    "available": "2024-05-13T00:00",
+    "due": "2024-05-20T23:59",
+    "points": "100"
   },
   {
     "_id": "A303",
     "title": "Systems Engineering Exam",
-    "course": "RS103"
+    "course": "RS103",
+    "description": "An exam covering key concepts in systems engineering, focusing on integration and lifecycle management.",
+    "available": "2024-05-20T00:00",
+    "due": "2024-05-27T23:59",
+    "points": "100"
   }
 ]
