@@ -94,16 +94,16 @@ export default function AssignmentEditor() {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="wd-due-date" className="form-label">Due Date</label>
-                  <input id="wd-due-date" className="form-control" value={formatDateTime(assignment.due)} type="datetime-local" />
+                  <input id="wd-due-date" className="form-control" value={formatDateTime(assignment.due_date)} type="datetime-local" />
                 </div>
                 <div className="d-flex justify-content-between">
                   <div className="me-2">
                     <label htmlFor="wd-available-from" className="form-label">Available From</label>
-                    <input id="wd-available-from" className="form-control" value={formatDateTime(assignment.available)} type="datetime-local" />
+                    <input id="wd-available-from" className="form-control" value={formatDateTime(assignment.available_date)} type="datetime-local" />
                   </div>
                   <div>
                     <label htmlFor="wd-available-until" className="form-label">Until</label>
-                    <input id="wd-available-until" className="form-control" value={formatDateTime(assignment.due)} type="datetime-local" />
+                    <input id="wd-available-until" className="form-control" value={formatDateTime(assignment.due_date)} type="datetime-local" />
                   </div>
                 </div>
               </div>

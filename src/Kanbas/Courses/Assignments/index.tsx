@@ -62,8 +62,8 @@ export default function Assignments() {
                       </a>
                       <div>
                         <span className="text-danger">Multiple Modules</span> &#124;
-                        <strong> Not available until </strong> {formatDate(assignment.available)} &#124;
-                        <strong> Due </strong> {formatDate(assignment.due)} &#124; {assignment.points} pts
+                        <strong> Not available until </strong> {formatDate(assignment.available_date)} &#124;
+                        <strong> Due </strong> {formatDate(assignment.due_date)} &#124; {assignment.points} pts
                       </div>
                     </div>
 
